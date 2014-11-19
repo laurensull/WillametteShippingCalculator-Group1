@@ -6,3 +6,4 @@ install:
 - pip install simplejson
 script:
 - python -m unittest test_SalemItemUnitTest -v
+- python -m unittest test_ShippingLogicUnitTest -v
