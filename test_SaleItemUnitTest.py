@@ -44,3 +44,15 @@ class TestSaleItem(unittest.TestCase):
 		
 		itemWithFreeShipping = SaleItem(['10', '2', 'FSTestItem', 'FS'])
 		self.assertEqual(itemWithFreeShipping.getFreeShipping(), True)
+		
+	def test_getCost(self) :
+		self.assertEqual (self.theSaleItem.getCost(), '10')
+		
+	def test_getWeight (self) :
+		self.assertEqual (self.theSaleItem.getWeight(), '2')
+	
+	def test_getTitle (self) :
+		self.assertEqual (self.theSaleItem.getTitle(), 'TestItem')
+	
+	def test_getFreeShipping (self ):
+		self.assertEqual (self.theSaleItem.getFreeShipping(), False)
