@@ -7,4 +7,4 @@ install:
 script:
 - python -m unittest test_ShippingLogicUnitTest -v
 - python -m unittest test_SaleItemUnitTest -v
->>>>>>> upstream/master
+
